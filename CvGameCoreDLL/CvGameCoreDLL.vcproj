@@ -20,91 +20,22 @@
 			Name="Debug|Win32"
 			OutputDirectory="Debug"
 			IntermediateDirectory="Debug"
-			ConfigurationType="2"
+			ConfigurationType="0"
 			InheritedPropertySheets="$(VCInstallDir)VCProjectDefaults\UpgradeFromVC71.vsprops"
 			CharacterSet="2"
 			>
 			<Tool
-				Name="VCPreBuildEventTool"
-			/>
-			<Tool
-				Name="VCCustomBuildTool"
-			/>
-			<Tool
-				Name="VCXMLDataGeneratorTool"
-			/>
-			<Tool
-				Name="VCWebServiceProxyGeneratorTool"
-			/>
-			<Tool
-				Name="VCMIDLTool"
-			/>
-			<Tool
-				Name="VCCLCompilerTool"
-				Optimization="0"
-				AdditionalIncludeDirectories="&quot;Boost-1.32.0\include&quot;;Python24\include"
-				PreprocessorDefinitions="WIN32;_WINDOWS;_USRDLL;_DEBUG;_CRT_NON_CONFORMING_SWPRINTFS;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;CVGAMECOREDLL_EXPORTS"
-				MinimalRebuild="false"
-				ExceptionHandling="1"
-				BasicRuntimeChecks="3"
-				RuntimeLibrary="3"
-				BufferSecurityCheck="false"
-				EnableFunctionLevelLinking="true"
-				ForceConformanceInForLoopScope="false"
-				RuntimeTypeInfo="true"
-				UsePrecompiledHeader="2"
-				PrecompiledHeaderThrough="CvGameCoreDLL.h"
-				ProgramDataBaseFileName="$(IntDir)/vc70.pdb"
-				WarningLevel="3"
-				Detect64BitPortabilityProblems="false"
-				DebugInformationFormat="4"
-				CallingConvention="0"
-				ShowIncludes="false"
-			/>
-			<Tool
-				Name="VCManagedResourceCompilerTool"
-			/>
-			<Tool
-				Name="VCResourceCompilerTool"
-			/>
-			<Tool
-				Name="VCPreLinkEventTool"
-			/>
-			<Tool
-				Name="VCLinkerTool"
-				AdditionalDependencies="boost_python-vc71-mt-gd-1_32.lib winmm.lib"
-				OutputFile="../Beyond the Sword/Assets/CvGameCoreDLL_DEBUG.dll"
-				LinkIncremental="2"
-				AdditionalLibraryDirectories="Python24\libs;&quot;boost-1.32.0\libs\&quot;"
-				GenerateDebugInformation="true"
-				ProgramDatabaseFile="$(OutDir)/CvGameCoreDLL_DEBUG.pdb"
-				SubSystem="2"
-				LargeAddressAware="2"
-				RandomizedBaseAddress="1"
-				DataExecutionPrevention="0"
-				ImportLibrary="$(OutDir)/CvGameCoreDLL.lib"
-				TargetMachine="1"
-			/>
-			<Tool
-				Name="VCALinkTool"
-			/>
-			<Tool
-				Name="VCManifestTool"
-			/>
-			<Tool
-				Name="VCXDCMakeTool"
-			/>
-			<Tool
-				Name="VCBscMakeTool"
-			/>
-			<Tool
-				Name="VCFxCopTool"
-			/>
-			<Tool
-				Name="VCAppVerifierTool"
-			/>
-			<Tool
-				Name="VCPostBuildEventTool"
+				Name="VCNMakeTool"
+				BuildCommandLine="nmake Release"
+				ReBuildCommandLine="nmake clean Release"
+				CleanCommandLine="nmake clean"
+				Output=""
+				PreprocessorDefinitions=""
+				IncludeSearchPath=""
+				ForcedIncludes=""
+				AssemblySearchPath=""
+				ForcedUsingAssemblies=""
+				CompileAsManaged=""
 			/>
 		</Configuration>
 		<Configuration
@@ -400,10 +331,6 @@
 				<FileConfiguration
 					Name="Debug|Win32"
 					>
-					<Tool
-						Name="VCCLCompilerTool"
-						UsePrecompiledHeader="1"
-					/>
 				</FileConfiguration>
 				<FileConfiguration
 					Name="Release|Win32"
@@ -436,10 +363,6 @@
 				<FileConfiguration
 					Name="Debug|Win32"
 					>
-					<Tool
-						Name="VCCLCompilerTool"
-						UsePrecompiledHeader="2"
-					/>
 				</FileConfiguration>
 				<FileConfiguration
 					Name="Release|Win32"
@@ -469,6 +392,10 @@
 			<File
 				RelativePath=".\CvArtFileMgr.cpp"
 				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+				</FileConfiguration>
 			</File>
 			<File
 				RelativePath=".\CvCity.cpp"
@@ -476,10 +403,6 @@
 				<FileConfiguration
 					Name="Debug|Win32"
 					>
-					<Tool
-						Name="VCCLCompilerTool"
-						UsePrecompiledHeader="2"
-					/>
 				</FileConfiguration>
 				<FileConfiguration
 					Name="Release|Win32"
@@ -512,10 +435,6 @@
 				<FileConfiguration
 					Name="Debug|Win32"
 					>
-					<Tool
-						Name="VCCLCompilerTool"
-						UsePrecompiledHeader="2"
-					/>
 				</FileConfiguration>
 				<FileConfiguration
 					Name="Release|Win32"
@@ -548,10 +467,6 @@
 				<FileConfiguration
 					Name="Debug|Win32"
 					>
-					<Tool
-						Name="VCCLCompilerTool"
-						UsePrecompiledHeader="2"
-					/>
 				</FileConfiguration>
 				<FileConfiguration
 					Name="Release|Win32"
@@ -581,10 +496,18 @@
 			<File
 				RelativePath=".\CvDiploParameters.cpp"
 				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+				</FileConfiguration>
 			</File>
 			<File
 				RelativePath=".\CvDLLButtonPopup.cpp"
 				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+				</FileConfiguration>
 			</File>
 			<File
 				RelativePath=".\CvDLLEntity.cpp"
@@ -592,10 +515,6 @@
 				<FileConfiguration
 					Name="Debug|Win32"
 					>
-					<Tool
-						Name="VCCLCompilerTool"
-						UsePrecompiledHeader="2"
-					/>
 				</FileConfiguration>
 				<FileConfiguration
 					Name="Release|Win32"
@@ -625,22 +544,42 @@
 			<File
 				RelativePath=".\CvDLLPython.cpp"
 				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+				</FileConfiguration>
 			</File>
 			<File
 				RelativePath=".\CvDllPythonEvents.cpp"
 				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+				</FileConfiguration>
 			</File>
 			<File
 				RelativePath=".\CvDllTranslator.cpp"
 				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+				</FileConfiguration>
 			</File>
 			<File
 				RelativePath=".\CvDLLWidgetData.cpp"
 				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+				</FileConfiguration>
 			</File>
 			<File
 				RelativePath=".\CvEventReporter.cpp"
 				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+				</FileConfiguration>
 			</File>
 			<File
 				RelativePath=".\CvFractal.cpp"
@@ -648,10 +587,6 @@
 				<FileConfiguration
 					Name="Debug|Win32"
 					>
-					<Tool
-						Name="VCCLCompilerTool"
-						UsePrecompiledHeader="2"
-					/>
 				</FileConfiguration>
 				<FileConfiguration
 					Name="Release|Win32"
@@ -684,10 +619,6 @@
 				<FileConfiguration
 					Name="Debug|Win32"
 					>
-					<Tool
-						Name="VCCLCompilerTool"
-						UsePrecompiledHeader="2"
-					/>
 				</FileConfiguration>
 				<FileConfiguration
 					Name="Release|Win32"
@@ -720,10 +651,6 @@
 				<FileConfiguration
 					Name="Debug|Win32"
 					>
-					<Tool
-						Name="VCCLCompilerTool"
-						UsePrecompiledHeader="2"
-					/>
 				</FileConfiguration>
 				<FileConfiguration
 					Name="Release|Win32"
@@ -756,10 +683,6 @@
 				<FileConfiguration
 					Name="Debug|Win32"
 					>
-					<Tool
-						Name="VCCLCompilerTool"
-						UsePrecompiledHeader="2"
-					/>
 				</FileConfiguration>
 				<FileConfiguration
 					Name="Release|Win32"
@@ -789,14 +712,26 @@
 			<File
 				RelativePath=".\CvGameCoreUtils.cpp"
 				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+				</FileConfiguration>
 			</File>
 			<File
 				RelativePath=".\CvGameInterface.cpp"
 				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+				</FileConfiguration>
 			</File>
 			<File
 				RelativePath=".\CvGameTextMgr.cpp"
 				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+				</FileConfiguration>
 			</File>
 			<File
 				RelativePath=".\CvGlobals.cpp"
@@ -804,10 +739,6 @@
 				<FileConfiguration
 					Name="Debug|Win32"
 					>
-					<Tool
-						Name="VCCLCompilerTool"
-						UsePrecompiledHeader="2"
-					/>
 				</FileConfiguration>
 				<FileConfiguration
 					Name="Release|Win32"
@@ -837,6 +768,10 @@
 			<File
 				RelativePath=".\CvHallOfFameInfo.cpp"
 				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+				</FileConfiguration>
 			</File>
 			<File
 				RelativePath=".\CvInfos.cpp"
@@ -844,10 +779,6 @@
 				<FileConfiguration
 					Name="Debug|Win32"
 					>
-					<Tool
-						Name="VCCLCompilerTool"
-						UsePrecompiledHeader="2"
-					/>
 				</FileConfiguration>
 				<FileConfiguration
 					Name="Release|Win32"
@@ -877,10 +808,18 @@
 			<File
 				RelativePath=".\CvInfoWater.cpp"
 				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+				</FileConfiguration>
 			</File>
 			<File
 				RelativePath=".\CvInitCore.cpp"
 				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+				</FileConfiguration>
 			</File>
 			<File
 				RelativePath=".\CvMap.cpp"
@@ -888,10 +827,6 @@
 				<FileConfiguration
 					Name="Debug|Win32"
 					>
-					<Tool
-						Name="VCCLCompilerTool"
-						UsePrecompiledHeader="2"
-					/>
 				</FileConfiguration>
 				<FileConfiguration
 					Name="Release|Win32"
@@ -924,10 +859,6 @@
 				<FileConfiguration
 					Name="Debug|Win32"
 					>
-					<Tool
-						Name="VCCLCompilerTool"
-						UsePrecompiledHeader="2"
-					/>
 				</FileConfiguration>
 				<FileConfiguration
 					Name="Release|Win32"
@@ -957,10 +888,18 @@
 			<File
 				RelativePath=".\CvMessageControl.cpp"
 				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+				</FileConfiguration>
 			</File>
 			<File
 				RelativePath=".\CvMessageData.cpp"
 				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+				</FileConfiguration>
 			</File>
 			<File
 				RelativePath=".\CvPlayer.cpp"
@@ -968,10 +907,6 @@
 				<FileConfiguration
 					Name="Debug|Win32"
 					>
-					<Tool
-						Name="VCCLCompilerTool"
-						UsePrecompiledHeader="2"
-					/>
 				</FileConfiguration>
 				<FileConfiguration
 					Name="Release|Win32"
@@ -1004,10 +939,6 @@
 				<FileConfiguration
 					Name="Debug|Win32"
 					>
-					<Tool
-						Name="VCCLCompilerTool"
-						UsePrecompiledHeader="2"
-					/>
 				</FileConfiguration>
 				<FileConfiguration
 					Name="Release|Win32"
@@ -1040,10 +971,6 @@
 				<FileConfiguration
 					Name="Debug|Win32"
 					>
-					<Tool
-						Name="VCCLCompilerTool"
-						UsePrecompiledHeader="2"
-					/>
 				</FileConfiguration>
 				<FileConfiguration
 					Name="Release|Win32"
@@ -1076,10 +1003,6 @@
 				<FileConfiguration
 					Name="Debug|Win32"
 					>
-					<Tool
-						Name="VCCLCompilerTool"
-						UsePrecompiledHeader="2"
-					/>
 				</FileConfiguration>
 				<FileConfiguration
 					Name="Release|Win32"
@@ -1109,10 +1032,18 @@
 			<File
 				RelativePath=".\CvPopupInfo.cpp"
 				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+				</FileConfiguration>
 			</File>
 			<File
 				RelativePath=".\CvPopupReturn.cpp"
 				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+				</FileConfiguration>
 			</File>
 			<File
 				RelativePath=".\CvRandom.cpp"
@@ -1120,10 +1051,6 @@
 				<FileConfiguration
 					Name="Debug|Win32"
 					>
-					<Tool
-						Name="VCCLCompilerTool"
-						UsePrecompiledHeader="2"
-					/>
 				</FileConfiguration>
 				<FileConfiguration
 					Name="Release|Win32"
@@ -1153,10 +1080,18 @@
 			<File
 				RelativePath=".\CvReplayInfo.cpp"
 				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+				</FileConfiguration>
 			</File>
 			<File
 				RelativePath=".\CvReplayMessage.cpp"
 				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+				</FileConfiguration>
 			</File>
 			<File
 				RelativePath=".\CvSelectionGroup.cpp"
@@ -1164,10 +1099,6 @@
 				<FileConfiguration
 					Name="Debug|Win32"
 					>
-					<Tool
-						Name="VCCLCompilerTool"
-						UsePrecompiledHeader="2"
-					/>
 				</FileConfiguration>
 				<FileConfiguration
 					Name="Release|Win32"
@@ -1197,18 +1128,34 @@
 			<File
 				RelativePath=".\CvSelectionGroupAI.cpp"
 				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+				</FileConfiguration>
 			</File>
 			<File
 				RelativePath=".\CvStatistics.cpp"
 				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+				</FileConfiguration>
 			</File>
 			<File
 				RelativePath=".\CvStructs.cpp"
 				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+				</FileConfiguration>
 			</File>
 			<File
 				RelativePath=".\CvTalkingHeadMessage.cpp"
 				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+				</FileConfiguration>
 			</File>
 			<File
 				RelativePath=".\CvTeam.cpp"
@@ -1216,10 +1163,6 @@
 				<FileConfiguration
 					Name="Debug|Win32"
 					>
-					<Tool
-						Name="VCCLCompilerTool"
-						UsePrecompiledHeader="2"
-					/>
 				</FileConfiguration>
 				<FileConfiguration
 					Name="Release|Win32"
@@ -1252,10 +1195,6 @@
 				<FileConfiguration
 					Name="Debug|Win32"
 					>
-					<Tool
-						Name="VCCLCompilerTool"
-						UsePrecompiledHeader="2"
-					/>
 				</FileConfiguration>
 				<FileConfiguration
 					Name="Release|Win32"
@@ -1288,10 +1227,6 @@
 				<FileConfiguration
 					Name="Debug|Win32"
 					>
-					<Tool
-						Name="VCCLCompilerTool"
-						UsePrecompiledHeader="2"
-					/>
 				</FileConfiguration>
 				<FileConfiguration
 					Name="Release|Win32"
@@ -1324,10 +1259,6 @@
 				<FileConfiguration
 					Name="Debug|Win32"
 					>
-					<Tool
-						Name="VCCLCompilerTool"
-						UsePrecompiledHeader="2"
-					/>
 				</FileConfiguration>
 				<FileConfiguration
 					Name="Release|Win32"
@@ -1357,26 +1288,50 @@
 			<File
 				RelativePath=".\CvXMLLoadUtility.cpp"
 				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+				</FileConfiguration>
 			</File>
 			<File
 				RelativePath=".\CvXMLLoadUtilityGet.cpp"
 				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+				</FileConfiguration>
 			</File>
 			<File
 				RelativePath=".\CvXMLLoadUtilityInit.cpp"
 				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+				</FileConfiguration>
 			</File>
 			<File
 				RelativePath=".\CvXMLLoadUtilitySet.cpp"
 				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+				</FileConfiguration>
 			</File>
 			<File
 				RelativePath=".\FAssert.cpp"
 				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+				</FileConfiguration>
 			</File>
 			<File
 				RelativePath=".\FDialogTemplate.cpp"
 				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+				</FileConfiguration>
 			</File>
 		</Filter>
 		<Filter
@@ -1387,266 +1342,530 @@
 			<File
 				RelativePath=".\AI_Defines.h"
 				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+				</FileConfiguration>
 			</File>
 			<File
 				RelativePath=".\CvArea.h"
 				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+				</FileConfiguration>
 			</File>
 			<File
 				RelativePath=".\CvArtFileMgr.h"
 				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+				</FileConfiguration>
 			</File>
 			<File
 				RelativePath=".\CvCity.h"
 				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+				</FileConfiguration>
 			</File>
 			<File
 				RelativePath=".\CvCityAI.h"
 				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+				</FileConfiguration>
 			</File>
 			<File
 				RelativePath=".\CvDeal.h"
 				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+				</FileConfiguration>
 			</File>
 			<File
 				RelativePath=".\CvDefines.h"
 				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+				</FileConfiguration>
 			</File>
 			<File
 				RelativePath=".\CvDiploParameters.h"
 				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+				</FileConfiguration>
 			</File>
 			<File
 				RelativePath=".\CvDLLButtonPopup.h"
 				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+				</FileConfiguration>
 			</File>
 			<File
 				RelativePath=".\CvDLLDataStreamIFaceBase.h"
 				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+				</FileConfiguration>
 			</File>
 			<File
 				RelativePath=".\CvDLLEngineIFaceBase.h"
 				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+				</FileConfiguration>
 			</File>
 			<File
 				RelativePath=".\CvDLLEntity.h"
 				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+				</FileConfiguration>
 			</File>
 			<File
 				RelativePath=".\CvDLLEntityIFaceBase.h"
 				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+				</FileConfiguration>
 			</File>
 			<File
 				RelativePath=".\CvDLLFAStarIFaceBase.h"
 				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+				</FileConfiguration>
 			</File>
 			<File
 				RelativePath=".\CvDLLFlagEntityIFaceBase.h"
 				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+				</FileConfiguration>
 			</File>
 			<File
 				RelativePath=".\CvDLLIniParserIFaceBase.h"
 				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+				</FileConfiguration>
 			</File>
 			<File
 				RelativePath=".\CvDLLInterfaceIFaceBase.h"
 				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+				</FileConfiguration>
 			</File>
 			<File
 				RelativePath=".\CvDLLPlotBuilderIFaceBase.h"
 				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+				</FileConfiguration>
 			</File>
 			<File
 				RelativePath=".\CvDllPythonEvents.h"
 				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+				</FileConfiguration>
 			</File>
 			<File
 				RelativePath=".\CvDLLPythonIFaceBase.h"
 				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+				</FileConfiguration>
 			</File>
 			<File
 				RelativePath=".\CvDLLSymbolIFaceBase.h"
 				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+				</FileConfiguration>
 			</File>
 			<File
 				RelativePath=".\CvDllTranslator.h"
 				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+				</FileConfiguration>
 			</File>
 			<File
 				RelativePath=".\CvDLLUtilityIFaceBase.h"
 				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+				</FileConfiguration>
 			</File>
 			<File
 				RelativePath=".\CvDLLWidgetData.h"
 				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+				</FileConfiguration>
 			</File>
 			<File
 				RelativePath=".\CvDLLXMLIFaceBase.h"
 				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+				</FileConfiguration>
 			</File>
 			<File
 				RelativePath=".\CvEnums.h"
 				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+				</FileConfiguration>
 			</File>
 			<File
 				RelativePath=".\CvEventReporter.h"
 				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+				</FileConfiguration>
 			</File>
 			<File
 				RelativePath=".\CvFractal.h"
 				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+				</FileConfiguration>
 			</File>
 			<File
 				RelativePath=".\CvGame.h"
 				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+				</FileConfiguration>
 			</File>
 			<File
 				RelativePath=".\CvGameAI.h"
 				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+				</FileConfiguration>
 			</File>
 			<File
 				RelativePath=".\CvGameCoreDLL.h"
 				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+				</FileConfiguration>
 			</File>
 			<File
 				RelativePath=".\CvGameCoreDLLDefNew.h"
 				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+				</FileConfiguration>
 			</File>
 			<File
 				RelativePath=".\CvGameCoreDLLUndefNew.h"
 				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+				</FileConfiguration>
 			</File>
 			<File
 				RelativePath=".\CvGameCoreUtils.h"
 				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+				</FileConfiguration>
 			</File>
 			<File
 				RelativePath=".\CvGameTextMgr.h"
 				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+				</FileConfiguration>
 			</File>
 			<File
 				RelativePath=".\CvGlobals.h"
 				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+				</FileConfiguration>
 			</File>
 			<File
 				RelativePath=".\CvHallOfFameInfo.h"
 				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+				</FileConfiguration>
 			</File>
 			<File
 				RelativePath=".\CvInfos.h"
 				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+				</FileConfiguration>
 			</File>
 			<File
 				RelativePath=".\CvInfoWater.h"
 				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+				</FileConfiguration>
 			</File>
 			<File
 				RelativePath=".\CvInitCore.h"
 				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+				</FileConfiguration>
 			</File>
 			<File
 				RelativePath=".\CvMap.h"
 				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+				</FileConfiguration>
 			</File>
 			<File
 				RelativePath=".\CvMapGenerator.h"
 				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+				</FileConfiguration>
 			</File>
 			<File
 				RelativePath=".\CvMessageControl.h"
 				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+				</FileConfiguration>
 			</File>
 			<File
 				RelativePath=".\CvMessageData.h"
 				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+				</FileConfiguration>
 			</File>
 			<File
 				RelativePath=".\CvPlayer.h"
 				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+				</FileConfiguration>
 			</File>
 			<File
 				RelativePath=".\CvPlayerAI.h"
 				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+				</FileConfiguration>
 			</File>
 			<File
 				RelativePath=".\CvPlot.h"
 				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+				</FileConfiguration>
 			</File>
 			<File
 				RelativePath=".\CvPlotGroup.h"
 				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+				</FileConfiguration>
 			</File>
 			<File
 				RelativePath=".\CvPopupInfo.h"
 				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+				</FileConfiguration>
 			</File>
 			<File
 				RelativePath=".\CvPopupReturn.h"
 				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+				</FileConfiguration>
 			</File>
 			<File
 				RelativePath=".\CvRandom.h"
 				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+				</FileConfiguration>
 			</File>
 			<File
 				RelativePath=".\CvReplayInfo.h"
 				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+				</FileConfiguration>
 			</File>
 			<File
 				RelativePath=".\CvReplayMessage.h"
 				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+				</FileConfiguration>
 			</File>
 			<File
 				RelativePath=".\CvSelectionGroup.h"
 				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+				</FileConfiguration>
 			</File>
 			<File
 				RelativePath=".\CvSelectionGroupAI.h"
 				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+				</FileConfiguration>
 			</File>
 			<File
 				RelativePath=".\CvStatistics.h"
 				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+				</FileConfiguration>
 			</File>
 			<File
 				RelativePath=".\CvString.h"
 				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+				</FileConfiguration>
 			</File>
 			<File
 				RelativePath=".\CvStructs.h"
 				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+				</FileConfiguration>
 			</File>
 			<File
 				RelativePath=".\CvTalkingHeadMessage.h"
 				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+				</FileConfiguration>
 			</File>
 			<File
 				RelativePath=".\CvTeam.h"
 				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+				</FileConfiguration>
 			</File>
 			<File
 				RelativePath=".\CvTeamAI.h"
 				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+				</FileConfiguration>
 			</File>
 			<File
 				RelativePath=".\CvUnit.h"
 				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+				</FileConfiguration>
 			</File>
 			<File
 				RelativePath=".\CvUnitAI.h"
 				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+				</FileConfiguration>
 			</File>
 			<File
 				RelativePath=".\CvXMLLoadUtility.h"
 				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+				</FileConfiguration>
 			</File>
 			<File
 				RelativePath=".\FAssert.h"
 				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+				</FileConfiguration>
 			</File>
 			<File
 				RelativePath=".\FDialogTemplate.h"
 				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+				</FileConfiguration>
 			</File>
 			<File
 				RelativePath=".\FProfiler.h"
@@ -1654,9 +1873,6 @@
 				<FileConfiguration
 					Name="Debug|Win32"
 					>
-					<Tool
-						Name="VCCustomBuildTool"
-					/>
 				</FileConfiguration>
 				<FileConfiguration
 					Name="Final Debug|Win32"
@@ -1669,10 +1885,18 @@
 			<File
 				RelativePath=".\LinkedList.h"
 				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+				</FileConfiguration>
 			</File>
 			<File
 				RelativePath=".\resource.h"
 				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+				</FileConfiguration>
 			</File>
 		</Filter>
 		<Filter
@@ -1681,10 +1905,18 @@
 			<File
 				RelativePath=".\CyArgsList.cpp"
 				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+				</FileConfiguration>
 			</File>
 			<File
 				RelativePath=".\CyArgsList.h"
 				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+				</FileConfiguration>
 			</File>
 			<Filter
 				Name="Source"
@@ -1693,166 +1925,330 @@
 				<File
 					RelativePath=".\CyArea.cpp"
 					>
+					<FileConfiguration
+						Name="Debug|Win32"
+						>
+					</FileConfiguration>
 				</File>
 				<File
 					RelativePath=".\CyAreaInterface.cpp"
 					>
+					<FileConfiguration
+						Name="Debug|Win32"
+						>
+					</FileConfiguration>
 				</File>
 				<File
 					RelativePath=".\CyArtFileMgr.cpp"
 					>
+					<FileConfiguration
+						Name="Debug|Win32"
+						>
+					</FileConfiguration>
 				</File>
 				<File
 					RelativePath=".\CyArtFileMgrInterface.cpp"
 					>
+					<FileConfiguration
+						Name="Debug|Win32"
+						>
+					</FileConfiguration>
 				</File>
 				<File
 					RelativePath=".\CyCityInterface1.cpp"
 					>
+					<FileConfiguration
+						Name="Debug|Win32"
+						>
+					</FileConfiguration>
 				</File>
 				<File
 					RelativePath=".\CyEnumsInterface.cpp"
 					>
+					<FileConfiguration
+						Name="Debug|Win32"
+						>
+					</FileConfiguration>
 				</File>
 				<File
 					RelativePath=".\CyGameCoreUtils.cpp"
 					>
+					<FileConfiguration
+						Name="Debug|Win32"
+						>
+					</FileConfiguration>
 				</File>
 				<File
 					RelativePath=".\CyGameCoreUtilsInterface.cpp"
 					>
+					<FileConfiguration
+						Name="Debug|Win32"
+						>
+					</FileConfiguration>
 				</File>
 				<File
 					RelativePath=".\CyGameInterface.cpp"
 					>
+					<FileConfiguration
+						Name="Debug|Win32"
+						>
+					</FileConfiguration>
 				</File>
 				<File
 					RelativePath=".\CyGameTextMgr.cpp"
 					>
+					<FileConfiguration
+						Name="Debug|Win32"
+						>
+					</FileConfiguration>
 				</File>
 				<File
 					RelativePath=".\CyGameTextMgrInterface.cpp"
 					>
+					<FileConfiguration
+						Name="Debug|Win32"
+						>
+					</FileConfiguration>
 				</File>
 				<File
 					RelativePath=".\CyGlobalContext.cpp"
 					>
+					<FileConfiguration
+						Name="Debug|Win32"
+						>
+					</FileConfiguration>
 				</File>
 				<File
 					RelativePath=".\CyGlobalContextInterface1.cpp"
 					>
+					<FileConfiguration
+						Name="Debug|Win32"
+						>
+					</FileConfiguration>
 				</File>
 				<File
 					RelativePath=".\CyGlobalContextInterface2.cpp"
 					>
+					<FileConfiguration
+						Name="Debug|Win32"
+						>
+					</FileConfiguration>
 				</File>
 				<File
 					RelativePath=".\CyGlobalContextInterface3.cpp"
 					>
+					<FileConfiguration
+						Name="Debug|Win32"
+						>
+					</FileConfiguration>
 				</File>
 				<File
 					RelativePath=".\CyGlobalContextInterface4.cpp"
 					>
+					<FileConfiguration
+						Name="Debug|Win32"
+						>
+					</FileConfiguration>
 				</File>
 				<File
 					RelativePath=".\CyHallOfFameInfo.cpp"
 					>
+					<FileConfiguration
+						Name="Debug|Win32"
+						>
+					</FileConfiguration>
 				</File>
 				<File
 					RelativePath=".\CyHallOfFameInterface.cpp"
 					>
+					<FileConfiguration
+						Name="Debug|Win32"
+						>
+					</FileConfiguration>
 				</File>
 				<File
 					RelativePath=".\CyInfoInterface1.cpp"
 					>
+					<FileConfiguration
+						Name="Debug|Win32"
+						>
+					</FileConfiguration>
 				</File>
 				<File
 					RelativePath=".\CyInfoInterface2.cpp"
 					>
+					<FileConfiguration
+						Name="Debug|Win32"
+						>
+					</FileConfiguration>
 				</File>
 				<File
 					RelativePath=".\CyInfoInterface3.cpp"
 					>
+					<FileConfiguration
+						Name="Debug|Win32"
+						>
+					</FileConfiguration>
 				</File>
 				<File
 					RelativePath=".\CyMap.cpp"
 					>
+					<FileConfiguration
+						Name="Debug|Win32"
+						>
+					</FileConfiguration>
 				</File>
 				<File
 					RelativePath=".\CyMapGenerator.cpp"
 					>
+					<FileConfiguration
+						Name="Debug|Win32"
+						>
+					</FileConfiguration>
 				</File>
 				<File
 					RelativePath=".\CyMapGeneratorInterface.cpp"
 					>
+					<FileConfiguration
+						Name="Debug|Win32"
+						>
+					</FileConfiguration>
 				</File>
 				<File
 					RelativePath=".\CyMapInterface.cpp"
 					>
+					<FileConfiguration
+						Name="Debug|Win32"
+						>
+					</FileConfiguration>
 				</File>
 				<File
 					RelativePath=".\CyMessageControl.cpp"
 					>
+					<FileConfiguration
+						Name="Debug|Win32"
+						>
+					</FileConfiguration>
 				</File>
 				<File
 					RelativePath=".\CyMessageControlInterface.cpp"
 					>
+					<FileConfiguration
+						Name="Debug|Win32"
+						>
+					</FileConfiguration>
 				</File>
 				<File
 					RelativePath=".\CyPlayer.cpp"
 					>
+					<FileConfiguration
+						Name="Debug|Win32"
+						>
+					</FileConfiguration>
 				</File>
 				<File
 					RelativePath=".\CyPlayerInterface1.cpp"
 					>
+					<FileConfiguration
+						Name="Debug|Win32"
+						>
+					</FileConfiguration>
 				</File>
 				<File
 					RelativePath=".\CyPlayerInterface2.cpp"
 					>
+					<FileConfiguration
+						Name="Debug|Win32"
+						>
+					</FileConfiguration>
 				</File>
 				<File
 					RelativePath=".\CyPlot.cpp"
 					>
+					<FileConfiguration
+						Name="Debug|Win32"
+						>
+					</FileConfiguration>
 				</File>
 				<File
 					RelativePath=".\CyPlotInterface1.cpp"
 					>
+					<FileConfiguration
+						Name="Debug|Win32"
+						>
+					</FileConfiguration>
 				</File>
 				<File
 					RelativePath=".\CyRandomInterface.cpp"
 					>
+					<FileConfiguration
+						Name="Debug|Win32"
+						>
+					</FileConfiguration>
 				</File>
 				<File
 					RelativePath=".\CyReplayInfo.cpp"
 					>
+					<FileConfiguration
+						Name="Debug|Win32"
+						>
+					</FileConfiguration>
 				</File>
 				<File
 					RelativePath=".\CySelectionGroup.cpp"
 					>
+					<FileConfiguration
+						Name="Debug|Win32"
+						>
+					</FileConfiguration>
 				</File>
 				<File
 					RelativePath=".\CySelectionGroupInterface.cpp"
 					>
+					<FileConfiguration
+						Name="Debug|Win32"
+						>
+					</FileConfiguration>
 				</File>
 				<File
 					RelativePath=".\CyStructsInterface1.cpp"
 					>
+					<FileConfiguration
+						Name="Debug|Win32"
+						>
+					</FileConfiguration>
 				</File>
 				<File
 					RelativePath=".\CyTeam.cpp"
 					>
+					<FileConfiguration
+						Name="Debug|Win32"
+						>
+					</FileConfiguration>
 				</File>
 				<File
 					RelativePath=".\CyTeamInterface.cpp"
 					>
+					<FileConfiguration
+						Name="Debug|Win32"
+						>
+					</FileConfiguration>
 				</File>
 				<File
 					RelativePath=".\CyUnit.cpp"
 					>
+					<FileConfiguration
+						Name="Debug|Win32"
+						>
+					</FileConfiguration>
 				</File>
 				<File
 					RelativePath=".\CyUnitInterface1.cpp"
 					>
+					<FileConfiguration
+						Name="Debug|Win32"
+						>
+					</FileConfiguration>
 				</File>
 			</Filter>
 			<Filter
@@ -1862,92 +2258,180 @@
 				<File
 					RelativePath=".\CyArea.h"
 					>
+					<FileConfiguration
+						Name="Debug|Win32"
+						>
+					</FileConfiguration>
 				</File>
 				<File
 					RelativePath=".\CyArtFileMgr.h"
 					>
+					<FileConfiguration
+						Name="Debug|Win32"
+						>
+					</FileConfiguration>
 				</File>
 				<File
 					RelativePath=".\CyCity.cpp"
 					>
+					<FileConfiguration
+						Name="Debug|Win32"
+						>
+					</FileConfiguration>
 				</File>
 				<File
 					RelativePath=".\CyCity.h"
 					>
+					<FileConfiguration
+						Name="Debug|Win32"
+						>
+					</FileConfiguration>
 				</File>
 				<File
 					RelativePath=".\CyDeal.cpp"
 					>
+					<FileConfiguration
+						Name="Debug|Win32"
+						>
+					</FileConfiguration>
 				</File>
 				<File
 					RelativePath=".\CyDeal.h"
 					>
+					<FileConfiguration
+						Name="Debug|Win32"
+						>
+					</FileConfiguration>
 				</File>
 				<File
 					RelativePath=".\CyGame.cpp"
 					>
+					<FileConfiguration
+						Name="Debug|Win32"
+						>
+					</FileConfiguration>
 				</File>
 				<File
 					RelativePath=".\CyGame.h"
 					>
+					<FileConfiguration
+						Name="Debug|Win32"
+						>
+					</FileConfiguration>
 				</File>
 				<File
 					RelativePath=".\CyGameCoreUtils.h"
 					>
+					<FileConfiguration
+						Name="Debug|Win32"
+						>
+					</FileConfiguration>
 				</File>
 				<File
 					RelativePath=".\CyGameTextMgr.h"
 					>
+					<FileConfiguration
+						Name="Debug|Win32"
+						>
+					</FileConfiguration>
 				</File>
 				<File
 					RelativePath=".\CyGlobalContext.h"
 					>
+					<FileConfiguration
+						Name="Debug|Win32"
+						>
+					</FileConfiguration>
 				</File>
 				<File
 					RelativePath=".\CyHallOfFameInfo.h"
 					>
+					<FileConfiguration
+						Name="Debug|Win32"
+						>
+					</FileConfiguration>
 				</File>
 				<File
 					RelativePath=".\CyMap.h"
 					>
+					<FileConfiguration
+						Name="Debug|Win32"
+						>
+					</FileConfiguration>
 				</File>
 				<File
 					RelativePath=".\CyMapGenerator.h"
 					>
+					<FileConfiguration
+						Name="Debug|Win32"
+						>
+					</FileConfiguration>
 				</File>
 				<File
 					RelativePath=".\CyMessageControl.h"
 					>
+					<FileConfiguration
+						Name="Debug|Win32"
+						>
+					</FileConfiguration>
 				</File>
 				<File
 					RelativePath=".\CyPlayer.h"
 					>
+					<FileConfiguration
+						Name="Debug|Win32"
+						>
+					</FileConfiguration>
 				</File>
 				<File
 					RelativePath=".\CyPlot.h"
 					>
+					<FileConfiguration
+						Name="Debug|Win32"
+						>
+					</FileConfiguration>
 				</File>
 				<File
 					RelativePath=".\CyReplayInfo.h"
 					>
+					<FileConfiguration
+						Name="Debug|Win32"
+						>
+					</FileConfiguration>
 				</File>
 				<File
 					RelativePath=".\CySelectionGroup.h"
 					>
+					<FileConfiguration
+						Name="Debug|Win32"
+						>
+					</FileConfiguration>
 				</File>
 				<File
 					RelativePath=".\CyTeam.h"
 					>
+					<FileConfiguration
+						Name="Debug|Win32"
+						>
+					</FileConfiguration>
 				</File>
 				<File
 					RelativePath=".\CyUnit.h"
 					>
+					<FileConfiguration
+						Name="Debug|Win32"
+						>
+					</FileConfiguration>
 				</File>
 			</Filter>
 		</Filter>
 		<File
 			RelativePath=".\CvGameCoreDLL.rc"
 			>
+			<FileConfiguration
+				Name="Debug|Win32"
+				>
+			</FileConfiguration>
 		</File>
 	</Files>
 	<Globals>
